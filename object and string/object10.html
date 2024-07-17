@@ -1,0 +1,22 @@
+<html>
+    <body></body>
+
+    <script>
+        const laptop={
+            brand:"acer",
+            model:"x500",
+            price:"1lakh"
+        };
+
+        object.freeze(laptop)
+        laptop.brand="mac";
+
+        object.seal(laptop)
+        delete laptop.model;
+
+        document.write(laptop.brand);
+        document.write(laptop.model);
+
+
+    </script>
+</html>
