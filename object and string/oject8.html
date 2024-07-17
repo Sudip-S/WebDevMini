@@ -1,0 +1,26 @@
+<html>
+    <body></body>
+
+    <script>
+        const account ={
+            accountNumber:345678,
+            balance:"2 million",
+
+            deposit: function(){
+
+                 return this.accountNumber +" is credited by 5 million.   "
+            },
+
+            withdraw: function(){
+               return this.accountNumber +" is debited by 1 million.  "
+            }
+
+
+        }
+
+        account.balance="6 million";
+        document.write(account.deposit());
+        document.write(account.withdraw());
+        alert(account.balance);
+    </script>
+</html>
